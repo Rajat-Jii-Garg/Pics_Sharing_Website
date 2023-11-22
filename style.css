@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(Images/banner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #ede5e5;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    color: rgb(244, 99, 46);
+    text-shadow: 1px 1px 2px rgb(52, 50, 50);
+}
+.list {
+    width: 36%;
+    line-height: 78px;
+    position: relative;
+    left: 160px;
+}
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list ul li {
+    font-size: 19px;
+    list-style: none;
+}
+/* .home-active {
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(248, 70, 100);
+} */
+.list ul li a{
+    text-decoration: none;
+    color: rgb(97, 91, 91);
+}
+.list ul li a:focus {
+    color: rgb(248, 70, 100);
+    font-size: 20px;
+    text-decoration: underline;
+}
+.list ul li a:active {
+    color: rgb(248, 70, 100);
+    font-size: 20px;
+    text-decoration: underline;
+}
+.list ul li a:hover {
+    color: rgb(248, 70, 100);
+}
+
+#login-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 75px;
+    position: relative;
+    left: 350px;
+    padding: 25px;
+}
+#login-btn>a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Tahoma;
+    opacity: 0.8;
+    color: rgba(7, 36, 249, 0.95);
+}
+
+#login-btn>a:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: dashed;
+
+}
+
+#login-btn button {
+    width: 70%;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#login-btn button a {
+    color:white;
+    text-decoration: none;
+}
+#login-btn button:hover {
+    opacity: 1;
+}
+
+.main-section {
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ede5e5;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.85;
+}
+
+#camera {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.main-section h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+    line-height: 1.2em;
+}
+
+.main-section input {
+    width: 50%;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 1.4em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main-section button {
+    width: 150px;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+.main-section button:hover {
+    background-color: rgb(221, 144, 0);
+    
+}
+
+.filter-gallary {
+    padding: 100px;
+}
+
+.portfolio-menu {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -60px;
+}
+
+.portfolio-menu ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover {
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+}
+.Active {
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.portfolio-item {
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portfolio-item .item {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    /* border: 2px solid red; */
+}
+
+.portfolio-item .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.members {
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+
+}
+
+.members-info {
+    text-align: center;
+}
+.members-info h1 {
+    font-size: 2.5em;
+    margin-top: -100px;
+}
+.members-info h1 span {
+    color: rgb(250, 176, 37);
+    font-size: 50px;
+}
+.members-info p {
+    font-size: 22px;
+    color:rgb(133, 89, 6);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.member-card {
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.member-card>img {
+    width: 100px;
+    height: 100px;
+}
+.member-card p {
+    /* font-size: 15px; */
+    margin: 15px 0;
+    line-height: 1.5em;
+}
+
+.member-card h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: inline-block;
+}
+.social-icons img {
+    cursor: pointer;
+    width: 110px;
+    margin: -10px 10px;
+}
+.m-images {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    /* overflow: hidden; */
+    position: relative;
+    left: -260px;
+}
+.m-images img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.m-images img:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+
+
+footer {
+    width: 100%;
+    height: 80vh;
+    background-color: #262626;
+    padding: 50px 100px;
+}
+
+footer .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin: auto;
+    height: 120px;
+    border: 1px solid rgba(211, 211, 211, 0.308);
+    outline: none;
+    border-radius: 8px;
+    padding: 25px 50px;
+}
+
+footer .newsletter h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+footer .newsletter p {
+    font-size: 20px;
+    color: #787373;
+    font-family: sans-serif;
+}
+
+.news-input input {
+    width: 350px;
+    padding: 10px 10px;
+    font-size: 20px ;
+    position: relative;
+    left: 5px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.news-input button {
+    width: 150px ;
+    padding: 10px 10px ;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.news-input button:hover {
+    opacity: 1;
+}
+
+
+.f-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+footer .f-contact {
+    width: 280px;
+    /* border: 1px solid white; */
+    padding: 30px 30px;
+    margin-top: 90px;
+    color: white;
+    box-sizing: border-box;
+}
+footer .f-contact h1 {
+    font-family: sans-serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+footer .f-contact address {
+    font-size: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: grey;
+}
+footer .f-contact i {
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+footer .f-contact i:hover {
+    color: rgb(39, 194, 255)
+}
+
+
+
+.useful-links {
+    width: 280px;
+    /* border: 1px solid white; */
+    padding: 30px 30px;
+    margin-top: 90px;
+    margin-left: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.useful-links h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.useful-links p{
+    padding: 5px 10px;
+}
+.useful-links p a{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    font-size: 18px;
+}
+.useful-links p a:hover {
+    color:white;
+}
+
+
+.Detail {
+    width: 280px;
+    /* border: 1px solid white; */
+    padding: 30px 30px;
+    margin-top: 90px;
+    margin-left: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.Detail h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.Detail p{
+    padding: 5px 10px;
+}
+.Detail p a{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    font-size: 18px;
+}
+.Detail p a:hover {
+    color:white;
+}
+
+
+.Help {
+    width: 280px;
+    /* border: 1px solid white; */
+    padding: 30px 30px;
+    margin-top: 90px;
+    margin-left: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.Help h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.Help p{
+    padding: 5px 10px;
+}
+.Help p a{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    font-size: 18px;
+}
+.Help p a:hover {
+    color:white;
+}
